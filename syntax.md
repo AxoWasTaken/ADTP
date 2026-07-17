@@ -4,7 +4,7 @@
 - Repeat must also be a number, 1 is yes, 0 is no.
 
 # Relaying Data
-```r <bus> <frequency> <repeat?>
+```r <bus> <frequency> <repeat?>```
 - Bus requires hardware modification.
 - Frequency must be a number, the unit is ALPs.
 - Repeat must also be a number, 1 is yes, 0 is no.
