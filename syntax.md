@@ -4,8 +4,11 @@
 ```io <disk> <bus> <frequency> <invert?>```
 - ```disk``` should be a input bus number (so the machine can use that bus to call data from the disk)
 - ```bus``` should be a output bus number.
-- ```frequency``` should be a number, the frequency unit is ALPs.
+- ```frequency``` should be a number, the frequency unit is ALPs. If frequency is 0 then it will just release a 0.5 second pulse.
 - ```invert?``` is a basic encryption feature, it should be a 1 for yes, 0 for no. (all it does is runs the data through a NOT gate)
+```io r <duration> <bus>```
+- ```duration``` should be a number, it will transmit a pulse ```duration``` seconds.
+- ```bus``` should be a output bus number.
 
 ## Controlling hardware
 The following command can delete disk data:
@@ -25,6 +28,6 @@ The following command can block bus usage:
 ```f <function>```
 - ```function``` should be the name of the function, example:
 
-```f (io 7 2 4 0) jk```
+```f (io 7 2 4 0) jk
 
-```f jk```
+f jk```
