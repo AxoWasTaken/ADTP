@@ -27,7 +27,8 @@ The following command can block bus usage:
 - ```as``` should be the name of the function.
 ```f <function>```
 - ```function``` should be the name of the function, example:
+```
+f (io 7 2 4 0) jk
+f jk
+```
 
-```f (io 7 2 4 0) jk
-
-f jk```
