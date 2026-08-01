@@ -19,5 +19,10 @@ The following command can block bus usage:
 - ```bus``` should be a input or output bus number.
 
 ## Functions
-```f (<cmd>,<cmd>)```
+```f (<cmd>,<cmd>) <as>```
 - ```cmd``` should be any command and it's syntax. Separate commands with commas. If you need to use a function in a function then the syntax is the same, and it will look something like this: ```f (f (io 1 1 4 0, io 1 2 4 0),a k 1)```
+- ```as``` should be the name of the function.
+```f <function>```
+- ```function``` should be the name of the function, example:
+```f (io 7 2 4 0) jk```
+```f jk```
