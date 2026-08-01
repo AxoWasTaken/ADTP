@@ -6,6 +6,7 @@
 - ```bus``` should be a output bus number.
 - ```frequency``` should be a number, the frequency unit is ALPs. If frequency is 0 then it will just release a 0.5 second pulse.
 - ```invert?``` is a basic encryption feature, it should be a 1 for yes, 0 for no. (all it does is runs the data through a NOT gate)
+
 ```io r <duration> <bus>```
 - ```duration``` should be a number, it will transmit a pulse ```duration``` seconds.
 - ```bus``` should be a output bus number.
