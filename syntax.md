@@ -1,15 +1,21 @@
-I had to go I haven't finished writing this yet :P
-
 # Commands
 
 ## I/O Control (Sending/Receiving)
-```io <disk> <frequency> <invert?>```
-- ```disk``` should be a disk number
-
-## Encrypting Data
-```e <mode>```
-- Mode should be a number, it defines how the data should be shifted. There is no decrypt function so the receiver must know how to decrypt it themselves.
+```io <disk> <bus> <frequency> <invert?>```
+- ```disk``` should be a input bus number (so the machine can use that bus to call data from the disk)
+- ```bus``` should be a output bus number.
+- ```frequency``` should be a number, the frequency unit is ALPs.
+- ```invert?``` is a basic encryption feature, it should be a 1 for yes, 0 for no. (all it does is runs the data through a NOT gate)
 
 ## Controlling hardware
-```a <on/off?>```
-- on/off should be a number, 1 to turn on the networker, 0 to turn off the networker.
+The following command can delete disk data:
+```a k <disk>```
+- ```disk``` should be a input bus number (so the machine can use that bus to call data from the disk)
+The following command can block bus usage:
+```a b <block/unblock?> <bus>```
+- ```block/unblock?``` should be a number, 1 for yes (block), 0 for no (unblock).
+- ```bus``` should be a input or output bus number.
+
+## Functions
+```f (<cmd>,<cmd>)```
+- ```cmd``` should be any command and it's syntax. Separate commands with commas. If you need to use a function in a function then the syntax is the same, and it will look something like this: ```f (f (io 1 1 4 0, io 1 2 4 0),a k 1)
