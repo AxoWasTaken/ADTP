@@ -2,3 +2,5 @@
 The _Axian Data Transfer Protocol_ is an assembly language-like system for the Axian Empire's telegraph systems.
 
 It has no filetype, and is just entered into the hardware.
+
+Interestingly it is becoming more of a low-level general purpose language.
