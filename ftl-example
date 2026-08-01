@@ -1,0 +1,6 @@
+/*
+Note: The following assumptions are made:
+Bus 1: Spool call
+*/
+f (io 0 1 0 0) ftl.spool
+f ftl.spool
