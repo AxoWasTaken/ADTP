@@ -9,13 +9,15 @@
 
 ## Controlling hardware
 The following command can delete disk data:
+
 ```a k <disk>```
 - ```disk``` should be a input bus number (so the machine can use that bus to call data from the disk)
 The following command can block bus usage:
+
 ```a b <block/unblock?> <bus>```
 - ```block/unblock?``` should be a number, 1 for yes (block), 0 for no (unblock).
 - ```bus``` should be a input or output bus number.
 
 ## Functions
 ```f (<cmd>,<cmd>)```
-- ```cmd``` should be any command and it's syntax. Separate commands with commas. If you need to use a function in a function then the syntax is the same, and it will look something like this: ```f (f (io 1 1 4 0, io 1 2 4 0),a k 1)
+- ```cmd``` should be any command and it's syntax. Separate commands with commas. If you need to use a function in a function then the syntax is the same, and it will look something like this: ```f (f (io 1 1 4 0, io 1 2 4 0),a k 1)```
